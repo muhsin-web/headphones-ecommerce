@@ -11,7 +11,7 @@ const ProductDetails = ({product, products}) => {
   console.log(incQty)
 
   const handleBuy = () => {
-    onAdd(product, qty)
+    onAdd(product, )
     setShowCart(true)
   }
 

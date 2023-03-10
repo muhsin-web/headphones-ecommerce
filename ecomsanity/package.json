@@ -15,10 +15,7 @@
     "sanity"
   ],
   "dependencies": {
-<<<<<<< HEAD
     "@sanity/client": "^4.0.1",
-=======
->>>>>>> 005cf73b953e0ca79299e90364d7b5ecc052016c
     "@sanity/vision": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

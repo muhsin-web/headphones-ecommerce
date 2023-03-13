@@ -15,9 +15,6 @@ export default async function handler(req, res) {
           ],
           line_items: req.body.map((item) => {
               const img = item.image[0].asset._ref;
-              const newImage = img.replace('image-', 'https://cdn.sanity.io/images/0i00cwiz/production/').replace('-webp', '.webp').replace('-png', '.png')
-              console.log(newImage)
-
               return{
                 price_data: {
                   currency: 'usd',
@@ -35,7 +32,7 @@ export default async function handler(req, res) {
               }
           }),
            
-          success_url: `${req.headers.origin}/?success=true`,
+          success_url: `${req.headers.origin}/success`,
           cancel_url: `${req.headers.origin}/?canceled=true`,
         }
       // Create Checkout Sessions from body params.

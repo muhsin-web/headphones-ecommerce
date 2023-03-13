@@ -11,12 +11,13 @@ const ProductDetails = ({product, products}) => {
   console.log(incQty)
 
   const handleBuy = () => {
-    onAdd(product, )
+    onAdd(product, qty)
     setShowCart(true)
   }
 
   const [index, setIndex] = useState(0);
   return (
+    
     <div>
       <div className="product-detail-container">
         <div>
@@ -45,7 +46,7 @@ const ProductDetails = ({product, products}) => {
             </div>
             <h4>Details:</h4>
             <p>{details}</p>
-            <p className="price">NGN {price}</p>
+            <p className="price">$ {price}</p>
             <div className="quantity">
               <h3>Quantity:</h3>
 
